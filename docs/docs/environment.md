@@ -1,11 +1,6 @@
-Node.js: (terminal дээр "node -v" гээд гарж ирэх хувилбараа бич)
-Python: ("python --version" гээд шалгав)
-MySQL: ("mysql --version" гээд шалгав)
-Эхлүүлэх дараалал: git clone → README унших
 # L02: Хөгжүүлэлтийн орчин
 
 ## Хувилбарууд
-
 | Технологи | Хувилбар | Тайлбар |
 |-----------|----------|---------|
 | Node.js | v20.11.0 | LTS |
@@ -15,10 +10,19 @@ MySQL: ("mysql --version" гээд шалгав)
 | MySQL | 8.4 | |
 | Git | 2.43.0 | |
 
-## Суулгах заавар
+Шалгах команд: `node -v`, `npm -v`, `python --version`, `pip --version`, `mysql --version`, `git --version`
 
-### Node.js
+## Эхлүүлэх дараалал
+1. `git clone https://github.com/isaackai1031-cmd/-N-Nyamka.git`
+2. Дээрх хувилбаруудыг суулгаж, командуудаар шалгана
+3. README.md-г уншина
+
+## Node.js суулгах
 ```bash
 nvm install 20.11.0
 nvm use 20.11.0
 node --version
+```
+
+## Анхааруулга
+`.env`, нууц үг, token, database dump-ийг commit хийхгүй.
