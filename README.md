@@ -22,3 +22,6 @@
 1. `git clone https://github.com/isaackai1031-cmd/-N-Nyamka.git`
 2. `docs/environment.md`-ийн хувилбаруудыг суулгана
 3. Код L17-оос эхэлж нэмэгдэнэ
+
+   ## Хөгжүүлэгч
+   isaackai1031-cmd — III дамжаа
