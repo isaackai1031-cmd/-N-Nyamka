@@ -1,0 +1,7 @@
+[
+  { "id": 1, "sku": "P01", "name": "Дэвтэр", "unit": "ширхэг", "is_active": true },
+  { "id": 2, "sku": "P02", "name": "Үзэг", "unit": "ширхэг", "is_active": true },
+  { "id": 3, "sku": "P03", "name": "Хавтас", "unit": "ширхэг", "is_active": true },
+  { "id": 4, "sku": "P04", "name": "Маркер", "unit": "ширхэг", "is_active": true },
+  { "id": 5, "sku": "P05", "name": "Цаас", "unit": "боодол", "is_active": true }
+]
