@@ -22,3 +22,10 @@
 1. `git clone https://github.com/isaackai1031-cmd/-N-Nyamka.git`
 2. `docs/environment.md`-ийн хувилбаруудыг суулгана
 3. Код L17-оос эхэлж нэмэгдэнэ
+
+## UI ажиллуулах
+```
+cd frontend
+python -m http.server 8000
+```
+Хөтөч дээр http://localhost:8000 нээнэ. (index.html-ийг шууд давхар дарж нээвэл fetch ажиллахгүй.)
