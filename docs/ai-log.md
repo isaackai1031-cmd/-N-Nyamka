@@ -58,6 +58,7 @@
 - **Хэрэгсэл:** Claude
 - **ХОУ юу хийсэн:** 00_Eronhii_Tolovlogoo PDF-ээс L16-ийн агуулгыг тодорхойлов. `node frontend/stock-cases.js`-ийг ажиллуулж 19 кейсийг js-cases.md-тэй тулгав. Давхар `stock.js`-ийг устгаж `stock-cases.js`-ийг `frontend/` руу зөөв. G2-evidence.md-д commit SHA нэмэв. G2-review.md (өөрийн үнэлгээ, зохиомжийн дүгнэлт, хамгаалалтын асуултууд) ноорогложээ.
 - **ХОУ юу хийгээгүй:** Аман хамгаалалтын хариултыг бичээгүй. Тэдгээрийг би өөрийн үгээр бэлдэнэ. Peer review, G2 PR-ийг би өөрөө хийнэ.
+- **ХОУ юуг шалгасан:** `node frontend/stock-cases.js`-ийн 19 гаралтыг js-cases.md-тэй мөр бүрээр тулгав; `diff`-ээр root ба frontend-ийн stock.js ижил гэдгийг батлав; `git log -- <файл>`-аар SHA-г олов.
 - **Би юуг шалгасан:** (бөглөнө: жишээ нь G2-review §3-ын асуулт бүрд баримт нээлгүй хариулж чадсан эсэх)
 - **Дараа хийх:** G2 issue нээж PR холбох, peer review, шалгалтын дараа G2-review §4-ийг бөглөх.
 
@@ -68,5 +69,7 @@
 - **Хэрэгсэл:** Claude
 - **ХОУ юу хийсэн:** `backend/` бүтэц (package.json, src/index.js, src/config.js, src/domain/stock.js), event loop ба require cache-ийн туршилтын script, node:test-ийн 23 тест, docs/node-runtime.md-ийн ноорог.
 - **ХОУ юу хийгээгүй:** Event loop-ийн таамаглалыг бичээгүй (node-runtime.md §4-ийг би өөрөө бөглөнө).
-- **Би юуг шалгасан:** (бөглөнө: жишээ нь `npm test`-ийг өөрөө ажиллуулсан, `calcBalance`-ийн qty шалгалтыг устгаж аль тест улаан болсныг харсан, PORT=abc-г туршсан)
+- **ХОУ юуг шалгасан:** `npm test` → эхлээд 1 fail (debug-log BUG-04), засвараар 23 pass; `PORT=abc` → exit 1; event loop, module cache script-ийн гаралтыг node-runtime.md-д бодитоор хуулав.
+- **Нэмэлт (ХОУ):** PR #2, #4-ийн commit-уудыг PR #7 руу merge хийв (README conflict гараар шийдэв), PR #6-г шалтгаантай хаав, traceability-д L17 тест холбов, baseline-ийн зорилгыг дугаарлав.
+- **Би юуг шалгасан:** (бөглөнө: GitHub дээр PR #7-ийн "Files changed"-ийг уншсан, ойлгоогүй мөрөө асуусан гэх мэт)
 - **Хамгаалалтад өөрийн үгээр тайлбарлах:** require cache яагаад pool-д чухал вэ; process.env яагаад текст вэ; blocking код сервер дээр яагаад аюултай вэ.
