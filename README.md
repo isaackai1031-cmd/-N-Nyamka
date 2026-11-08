@@ -36,3 +36,6 @@ cd frontend
 python -m http.server 8000
 ```
 Хөтөч дээр http://localhost:8000 нээнэ. (index.html-ийг шууд давхар дарж нээвэл fetch ажиллахгүй.)
+
+## Хөгжүүлэгч
+isaackai1031-cmd — III дамжаа
