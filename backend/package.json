@@ -1,0 +1,17 @@
+{
+  "name": "warehouse-node",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Агуулахын бүртгэл — Node.js backend (G3)",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test",
+    "demo:event-loop": "node scripts/event-loop.js",
+    "demo:modules": "node scripts/module-cache.js"
+  }
+}
