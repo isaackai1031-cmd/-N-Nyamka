@@ -13,7 +13,7 @@
 | 5 | DOM form ажилладаг, хүртээмжтэй | frontend/index.html, frontend/app.js, docs/usability.md (L13) | `8a89f13`, `1a066ca` | Keyboard-оор P06 нэмэх, хоосон нэр, давхар SKU | ✓ |
 | 6 | HTTP алдаа ба network error-ийг ялгасан | docs/http-observations.md, docs/img/ui-*.png (L14) | `1a066ca`, `9a0700c` | 5 эх сурвалж: 200 / [] / 404 / эвдэрсэн JSON / сүлжээ | ✓ |
 | 7 | Зохиомжийн зөрчил 3 | docs/design-review.md (L15) | `1a066ca` | qty талбар, id/SKU/name ялгаа, талбарын дүрэм | ✓ |
-| 8 | Issue / PR | G1: [#1](https://github.com/isaackai1031-cmd/-N-Nyamka/issues/1), [#3](https://github.com/isaackai1031-cmd/-N-Nyamka/issues/3), PR [#2](https://github.com/isaackai1031-cmd/-N-Nyamka/pull/2), [#4](https://github.com/isaackai1031-cmd/-N-Nyamka/pull/4). G2: **дутуу** | — | — | ⚠ доороос үзнэ |
+| 8 | Issue / PR | G1: [#1](https://github.com/isaackai1031-cmd/-N-Nyamka/issues/1), [#3](https://github.com/isaackai1031-cmd/-N-Nyamka/issues/3), PR [#2](https://github.com/isaackai1031-cmd/-N-Nyamka/pull/2), [#4](https://github.com/isaackai1031-cmd/-N-Nyamka/pull/4). G2: PR [#7](https://github.com/isaackai1031-cmd/-N-Nyamka/pull/7) (L16), issue **дутуу** | — | — | ⚠ доороос үзнэ |
 | 9 | Peer review | **дутуу** (design-review §4, traceability-ийн Peer review хэсэг хоосон) | — | — | ⚠ |
 | 10 | ХОУ ашиглалт | docs/ai-log.md | L16 commit | Хүсэлт, шалгасан зүйл, өөрөө хийсэн хэсэг | ✓ |
 
@@ -24,7 +24,7 @@
 | Evidence index-д commit SHA байгаагүй | Шалгуур бүрийг commit-той холбов |
 
 ## Дутуу зүйл (шалгалтаас өмнө өөрөө хийх)
-1. **G2 Issue/PR:** L09–L15-ийн ажил PR-гүйгээр main руу шууд upload хийгдсэн. G2-д зориулж issue нээгээд, энэ салбарын (`claude/project-description-542h5o`) PR-ийг тэр issue-тэй холбоно.
+1. **G2 Issue:** L09–L15-ийн ажил PR-гүйгээр main руу шууд upload хийгдсэн. G2 PR нь [#7](https://github.com/isaackai1031-cmd/-N-Nyamka/pull/7). G2-д зориулж issue нээгээд, PR #7-ийн тайлбарт `Closes #<issue>` гэж холбоно.
 2. **Peer review:** Ангийн нэг хүүхдийн G2 PR-д review бичиж, өөрийн PR-д review авна. Холбоосыг design-review.md §4-д бичнэ.
 3. **Хуучин нээлттэй PR-ууд:** [#2](https://github.com/isaackai1031-cmd/-N-Nyamka/pull/2), [#4](https://github.com/isaackai1031-cmd/-N-Nyamka/pull/4), [#6](https://github.com/isaackai1031-cmd/-N-Nyamka/pull/6) merge эсвэл хаах шийдвэр гаргана.
 4. **Тестгүй AC:** traceability.md-д AC-02.1, AC-02.3, AC-06.3, AC-08.2, AC-08.3 үлдсэн. Энэ нь G3/G4-д хамаарна. G2-ийн шалгуурт орохгүй ч тэмдэглэж үлдээв.
