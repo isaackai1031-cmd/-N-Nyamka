@@ -16,6 +16,12 @@
 | docs/environment.md | L02 орчин, хувилбар |
 | docs/problem.md | L03 асуудал, оролцогч, процесс |
 | docs/requirements.md | L04 user story, хүлээн авах нөхцөл |
+| docs/erd.md, docs/data-dictionary.md, docs/state-rules.md | L09–L10 өгөгдлийн загвар, төлөв |
+| docs/api-contract.md, docs/architecture.md | L11 API гэрээ, архитектур |
+| docs/js-cases.md | L12 JS кейсүүд (`node frontend/stock-cases.js`) |
+| docs/usability.md, docs/http-observations.md | L13–L14 UI ба HTTP туршилт |
+| docs/design-review.md | L15 зохиомжийн walkthrough |
+| docs/reviews/G2-evidence.md, docs/reviews/G2-review.md | L16 G2 review |
 | docs/ai-log.md | ХОУ ашигласан бүртгэл |
 
 ## Эхлүүлэх
