@@ -22,12 +22,13 @@
 | docs/usability.md, docs/http-observations.md | L13–L14 UI ба HTTP туршилт |
 | docs/design-review.md | L15 зохиомжийн walkthrough |
 | docs/reviews/G2-evidence.md, docs/reviews/G2-review.md | L16 G2 review |
+| docs/node-runtime.md | L17 Node.js runtime ба module (`cd backend && npm test`) |
 | docs/ai-log.md | ХОУ ашигласан бүртгэл |
 
 ## Эхлүүлэх
 1. `git clone https://github.com/isaackai1031-cmd/-N-Nyamka.git`
 2. `docs/environment.md`-ийн хувилбаруудыг суулгана
-3. Код L17-оос эхэлж нэмэгдэнэ
+3. Backend: `cd backend && npm test` (Node >= 20.11)
 
 ## UI ажиллуулах
 ```
