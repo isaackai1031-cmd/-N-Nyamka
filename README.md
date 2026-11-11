@@ -23,12 +23,13 @@
 | docs/design-review.md | L15 зохиомжийн walkthrough |
 | docs/reviews/G2-evidence.md, docs/reviews/G2-review.md | L16 G2 review |
 | docs/node-runtime.md | L17 Node.js runtime ба module (`cd backend && npm test`) |
+| docs/request-flow.md | L18 Express route, middleware, алдааны хэлбэр (`cd backend && npm start`) |
 | docs/ai-log.md | ХОУ ашигласан бүртгэл |
 
 ## Эхлүүлэх
 1. `git clone https://github.com/isaackai1031-cmd/-N-Nyamka.git`
 2. `docs/environment.md`-ийн хувилбаруудыг суулгана
-3. Backend: `cd backend && npm test` (Node >= 20.11)
+3. Backend: `cd backend && npm install && npm test` (Node >= 20.11), дараа нь `npm start` → http://localhost:3000/api/v1/products
 
 ## UI ажиллуулах
 ```

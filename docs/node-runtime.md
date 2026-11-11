@@ -4,7 +4,7 @@
 
 | Команд (`backend/` дотор) | Юу хийх |
 |---------------------------|---------|
-| `npm start` | Runtime-ийн мэдээлэл, тохиргоо, T03 урсгалыг хэвлэнэ |
+| `npm start` | L17-д runtime-ийн мэдээлэл хэвлэдэг байсан. L18-аас серверийг асаана (request-flow.md) |
 | `npm test` | `node:test`-ээр 23 тест ажиллуулна |
 | `npm run demo:event-loop` | Event loop-ийн дарааллын туршилт |
 | `npm run demo:modules` | `require` cache-ийн туршилт |

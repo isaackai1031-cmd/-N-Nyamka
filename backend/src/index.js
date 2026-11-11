@@ -1,7 +1,7 @@
-// L17: Node.js entry point. Express-ийг L18-д нэмнэ. Одоогоор runtime ба module-ийг шалгана.
-const path = require("node:path"); // Node-ийн суурь module (node: угтвар)
+// Entry point: тохиргоог уншаад серверийг асаана.
+// L17-д энд runtime-ийн мэдээлэл хэвлэдэг байсан. L18-аас Express сервер асаадаг болов.
 const { loadConfig } = require("./config"); // Өөрийн module (./ харьцангуй зам)
-const { calcBalance, normalizeProduct } = require("./domain/stock");
+const { createApp } = require("./app");
 
 function main() {
   let config;
@@ -13,18 +13,19 @@ function main() {
     return;
   }
 
-  console.log("Node:", process.version, "|", process.platform);
-  console.log("Энэ файл:", path.relative(process.cwd(), __filename));
-  console.log("Тохиргоо:", config);
+  const app = createApp();
+  const server = app.listen(config.port, () => {
+    console.log(`Node ${process.version} | ${config.nodeEnv}`);
+    console.log(`Сервер аслаа: http://localhost:${config.port}/api/v1/health`);
+  });
 
-  // T03 урсгал: opening 10, receipt +5, issue -4 → 11
-  console.log("T03:", calcBalance([
-    { type: "opening", qty: 10 },
-    { type: "receipt", qty: 5 },
-    { type: "issue", qty: 4 },
-  ]));
-  console.log("P01 оролт:", normalizeProduct({ sku: " p06 ", name: "Харандаа" }));
-  console.log("P03 оролт:", normalizeProduct({ sku: "P07", name: "   " }));
+  // Port завгүй (EADDRINUSE) гэх мэт асаах үеийн алдаа.
+  server.on("error", (err) => {
+    console.error("[server error]", err.message);
+    process.exitCode = 1;
+  });
+
+  return server;
 }
 
 // Шууд ажиллуулсан үед л main() дуудна. require() хийсэн тестэд ажиллахгүй.
